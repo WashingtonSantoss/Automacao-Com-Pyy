@@ -1,4 +1,5 @@
 #Arquivo para auxiliar em localizar coordenada x e y para o pyautogui.click
+
 import pyautogui
 import time
 import pandas
