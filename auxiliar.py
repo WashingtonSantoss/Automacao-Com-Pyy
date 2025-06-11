@@ -1,3 +1,4 @@
+#Pasta para auxiliar em localizar coordenada x e y
 import pyautogui
 import time
 import pandas

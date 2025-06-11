@@ -1,15 +1,15 @@
-#Aula 1 do Projeto Python // Automatizar Cadastro de Produtos //
-
+#Projeto Python // Automatizar Cadastro de Produtos //
 
 import pyautogui
 import time
 import pandas
-# pyautogui -> Fazer automações com python
+
+#pyautogui -> Fazer automações com python
 #pyautogui.press PRESSIONA UMA TECLA
 #pyautogui.write ESCREVE
 #pyautogui.click CLICA
 
-pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.6
 
 #Passo 1: Entrar no sistema da empresa -- https://dlp.hashtagtreinamentos.com/python/intensivao/login
 # Abrir o Chrome e digitar o site que eu quero entrar
@@ -24,9 +24,9 @@ time.sleep(2)
 
 #Passo 2: Fazer login
 pyautogui.click(x=867, y=377)
-pyautogui.write("washinsantos907@gmail.com")
+pyautogui.write("Seu email")
 pyautogui.press("tab")
-pyautogui.write("5800123Was@")
+pyautogui.write("Sua Senha")
 pyautogui.press("enter")
 time.sleep(2)
 
@@ -34,7 +34,7 @@ time.sleep(2)
 
 tabela = pandas.read_csv('Aula1/produtos.csv')
 
-#Passo 4: Cadastrar 1 produto
+#Passo 4: Cadastrar 1° produto
 '''time.sleep(1)
 pyautogui.click(x=866, y=256)
 codigo = "MOLO00251"
